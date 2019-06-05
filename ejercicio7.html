@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 7</title>
+    <style media="screen" type="text/css">
+        .producto{
+            position: relative;
+            width: 243px;
+            height: 285px;
+            top: 50px;
+            left: 50px;
+            border: 1px solid #808080;
+        }
+        .producto__item, .producto__ribbon{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .producto__ribbon, .producto__fast-shipping{
+            z-index: 1;
+        }
+        .producto__fast-shipping{
+            position: absolute;
+            bottom: 60px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+        }
+        .producto__fast-shipping img{
+            max-width: 100%;
+        }
+
+        .page__award{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/ejercicio-7_awwwards.png" src="award" class="page__award">
+    <div class="producto">
+        <img src="images/ejercicio-5_item.jpg" alt="producto" class="producto__item">
+        <img src="images/ejercicio-5_ribbon.png" alt="liston" class="producto__ribbon">
+        <div class="producto__fast-shipping">
+            <img src="images/ejercicio-6_ribbon.png" alt="oferta">
+        </div>
+    </div>
+</body>
+</html>
